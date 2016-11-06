@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 7 - Munira Fardous Nahin</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Exercise 7 - First Encounter with JavaScript<h1>
+		<script>
+			var answer1 = parseFloat(prompt("Please enter a first number"));
+			if (isNaN(answer1)){
+				do
+				{
+					answer1 = parseFloat(prompt("You did not enter a number. Please enter a first number."));
+				}while(isNaN(answer1));
+			}
+			var answer2 = parseFloat(prompt("Please enter a second number"));
+			if (isNaN(answer2)){
+				do
+				{
+					answer2 = parseFloat(prompt("You did not enter a number. Please enter a second number."));
+				}while(isNaN(answer2));
+			}
+			
+			if (answer1 == answer2){
+				alert("The numbers are equal.");
+			}	
+			if (answer1 > answer2){
+				alert (answer1 + " is grater than " + answer2);
+			}else {
+				alert(answer1 + " is less than or equal to " + answer2);
+			}
+		</script>
+	</body>
+</html>	

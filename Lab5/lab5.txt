@@ -1,0 +1,113 @@
+Exercise_1:Script location, basic input and output.
+
+		<title>Excercise 1 - Munira Fardous Nahin</title>
+		<meta charset="utf-8">
+		<script>
+			var answer = prompt("What is your first name?");
+			alert("Welcome to JavaScript, " + answer);
+			document.write("<h3>" + answer + " is a CST8285 student.</h3>");
+		</script>
+	
+Exercise_2:Use of parseInt.
+
+	
+		<script>
+			var answer = prompt("Please enter a number");
+			alert(parseInt(answer));
+		</script>	
+	
+	
+Exercise_3:Use of parseFloat.
+
+	
+		<script>
+			var answer = prompt("Please enter a number");
+			alert(parseFloat(answer));
+		</script>
+	
+		
+Exercise_4: Using 'if' statement, 'isNaN' function and Javascript comments.
+
+	
+		<script>
+		//Single line comment in JavaScript
+			var answer = prompt("Please enter a number");
+			/*
+			Multiple
+			Line
+			Comment
+			In JavaScript
+			*/
+			if (isNaN(parseFloat(answer))){
+				alert("You did not enter a number");
+			}else{
+				alert(answer + " is a number");
+			}
+		</script>
+	
+	
+Exercise_5:'Do....While' Statement.
+
+	
+		<script>
+			//Single line comment in JavaScript
+			var answer = prompt("Please enter a number");
+			/*
+			Multiple
+			Line
+			Comment
+			In JavaScript
+			*/
+			if (isNaN(parseFloat(answer))){
+				do
+				{
+					answer = prompt("You did not enter a number. Please enter a number");
+				}while (isNaN(parseFloat(answer)));
+			}	
+			alert(answer + " is a number");
+		</script>
+		
+	
+Exercise_6:Basic comparison.
+
+	
+		<script>
+			var answer1 = prompt("Please enter a first number");
+			if (isNaN(parseFloat(answer1))){
+				do
+				{
+					answer1 = prompt("You did not enter a number. Please enter a first number.");
+				}while(isNaN(parseFloat(answer1)));
+			}
+			var answer2 = prompt("Please enter a second number");
+			if (isNaN(parseFloat(answer2))){
+				do
+				{
+					answer2 = prompt("You did not enter a number. Please enter a second number.");
+				}while(isNaN(parseFloat(answer2)));
+			}
+			
+			if (answer1 == answer2){
+				alert("The numbers are equal.");
+			}	
+			if (answer1 > answer2){
+				alert (answer1 + " is grater than " + answer2);
+			}else {
+				alert(answer1 + " is less than or equal to " + answer2);
+			}
+		</script>
+	
+	
+Exercise_7:'For'loop.
+
+	
+		<script>
+			for (var n = 0; n < 10; n++){
+				if (n < 9){
+					document.write(n + ", ");
+				}else{
+					document.write(n);
+				}
+			}
+		</script>
+	
